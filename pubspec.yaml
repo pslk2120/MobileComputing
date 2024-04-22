@@ -1,0 +1,400 @@
+name: travel_journal_mobile_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.5 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  countries_world_map: ^1.1.1
+  cupertino_icons: ^1.0.2
+  firebase_core: ^2.27.0 
+  cloud_firestore: 4.15.8 
+  firebase_auth: ^4.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  assets:
+    - images/image4.png
+    - images/OnePieceFlag.png
+    - images/a.jpeg
+    - images/b.jpeg
+    - images/c.jpeg
+    - images/d.jpeg
+    - images/e.jpeg
+    - images/f.jpeg
+    - images/g.jpeg
+    - images/h.jpeg
+    - images/i.jpeg
+    - images/j.jpeg
+    - images/k.jpeg
+    - images/worldScreenPic.jpeg
+    - images/m.jpeg
+    - images/n.jpeg
+    - images/p.jpeg
+    - images/q.jpeg
+    - images/r.jpeg
+    - images/checklistScreenPic.jpeg
+    - images/mainScreenPic.jpeg
+
+    - assets/Africa/Algeria.png
+    - assets/Africa/Angola.png
+    - assets/Africa/Benin.png
+    - assets/Africa/Botswana.png
+    - assets/Africa/Burkina-Faso.png
+    - assets/Africa/Burundi.png
+    - assets/Africa/Cabo-Verde.png
+    - assets/Africa/Cameroon.png
+    - assets/Africa/Central-African-Republic.png
+    - assets/Africa/Chad.png
+    - assets/Africa/Comoros.png
+    - assets/Africa/Cote-d-Ivoire.png
+    - assets/Africa/Democratic-Republic-of-Congo.png
+    - assets/Africa/Djibouti.png
+    - assets/Africa/Egypt.png
+    - assets/Africa/Equatorial-Guinea.png
+    - assets/Africa/Eritrea.png
+    - assets/Africa/Eswatini.png
+    - assets/Africa/Ethiopia.png
+    - assets/Africa/Gabon.png
+    - assets/Africa/Gambia.png
+    - assets/Africa/Ghana.png
+    - assets/Africa/Guinea.png
+    - assets/Africa/Guinea-Bissau.png
+    - assets/Africa/Kenya.png
+    - assets/Africa/Lesotho.png
+    - assets/Africa/Liberia.png
+    - assets/Africa/Libya.png
+    - assets/Africa/Madagascar.png
+    - assets/Africa/Malawi.png
+    - assets/Africa/Mali.png
+    - assets/Africa/Mauritania.png
+    - assets/Africa/Mauritius.png
+    - assets/Africa/Morocco.png
+    - assets/Africa/Mozambique.png
+    - assets/Africa/Namibia.png
+    - assets/Africa/Niger.png
+    - assets/Africa/Nigeria.png
+    - assets/Africa/Republic of Congo.png
+    - assets/Africa/Rwanda.png
+    - assets/Africa/Sao-Tome-and-Principe.png
+    - assets/Africa/Senegal.png
+    - assets/Africa/Seychelles.png
+    - assets/Africa/Sierra-Leone.png
+    - assets/Africa/Somalia.png
+    - assets/Africa/South-Africa.png
+    - assets/Africa/South-Sudan.png
+    - assets/Africa/Sudan.png
+    - assets/Africa/Tanzania.png
+    - assets/Africa/Togo.png
+    - assets/Africa/Tunisia.png
+    - assets/Africa/Uganda.png
+    - assets/Africa/Zambia.png
+    - assets/Africa/Zimbabwe.png
+
+    - assets/Asia/Afghanistan.png
+    - assets/Asia/Armenia.png
+    - assets/Asia/Azerbaijan.png
+    - assets/Asia/Bahrain.png
+    - assets/Asia/Bangladesh.png
+    - assets/Asia/Bhutan.png
+    - assets/Asia/Brunei.png
+    - assets/Asia/Cambodia.png
+    - assets/Asia/China.png
+    - assets/Asia/Cyprus.png
+    - assets/Asia/Georgia.png
+    - assets/Asia/Hong-Kong.png
+    - assets/Asia/India.png
+    - assets/Asia/Indonesia.png
+    - assets/Asia/Iran.png
+    - assets/Asia/Iraq.png
+    - assets/Asia/Israel.png
+    - assets/Asia/Japan.png
+    - assets/Asia/Jordan.png
+    - assets/Asia/Kazakhstan.png
+    - assets/Asia/Kuwait.png
+    - assets/Asia/Kyrgyzstan.png
+    - assets/Asia/Laos.png
+    - assets/Asia/Lebanon.png
+    - assets/Asia/Macau.png
+    - assets/Asia/Malaysia.png
+    - assets/Asia/Maldives.png
+    - assets/Asia/Mongolia.png
+    - assets/Asia/Myanmar.png
+    - assets/Asia/Nepal.png
+    - assets/Asia/North-Korea.png
+    - assets/Asia/Oman.png
+    - assets/Asia/Pakistan.png
+    - assets/Asia/Palestine.png
+    - assets/Asia/Philippines.png
+    - assets/Asia/Qatar.png
+    - assets/Asia/Russia (East).png
+    - assets/Asia/Saudi-Arabia.png
+    - assets/Asia/Singapore.png
+    - assets/Asia/South-Korea.png
+    - assets/Asia/Sri-Lanka.png
+    - assets/Asia/Syria.png
+    - assets/Asia/Taiwan.png
+    - assets/Asia/Tajikistan.png
+    - assets/Asia/Thailand.png
+    - assets/Asia/Timor-Leste.png
+    - assets/Asia/Turkey.png
+    - assets/Asia/Turkmenistan.png
+    - assets/Asia/United-Arab-Emirates.png
+    - assets/Asia/Uzbekistan.png
+    - assets/Asia/Vietnam.png
+    - assets/Asia/Yemen.png
+
+    - assets/Europe/Albania.png
+    - assets/Europe/Andorra.png
+    - assets/Europe/Austria.png
+    - assets/Europe/Belarus.png
+    - assets/Europe/Belgium.png
+    - assets/Europe/Bosnia-Herzegovina.png
+    - assets/Europe/Bulgaria.png
+    - assets/Europe/Croatia.png
+    - assets/Europe/Czech-Republic.png
+    - assets/Europe/Denmark.png
+    - assets/Europe/Estonia.png
+    - assets/Europe/Finland.png
+    - assets/Europe/France.png
+    - assets/Europe/Germany.png
+    - assets/Europe/Greece.png
+    - assets/Europe/Hungary.png
+    - assets/Europe/Iceland.png
+    - assets/Europe/Ireland.png
+    - assets/Europe/Italy.png
+    - assets/Europe/Kosovo.png
+    - assets/Europe/Latvia.png
+    - assets/Europe/Liechtenstein.png
+    - assets/Europe/Lithuania.png
+    - assets/Europe/Luxembourg.png
+    - assets/Europe/Malta.png
+    - assets/Europe/Moldova.png
+    - assets/Europe/Monaco.png
+    - assets/Europe/Montenegro.png
+    - assets/Europe/Netherlands.png
+    - assets/Europe/North-Macedonia.png
+    - assets/Europe/Norway.png
+    - assets/Europe/Poland.png
+    - assets/Europe/Portugal.png
+    - assets/Europe/Romania.png
+    - assets/Europe/Russia (West).png
+    - assets/Europe/San-Marino.png
+    - assets/Europe/Serbia.png
+    - assets/Europe/Slovakia.png
+    - assets/Europe/Slovenia.png
+    - assets/Europe/Spain.png
+    - assets/Europe/Sweden.png
+    - assets/Europe/Switzerland.png
+    - assets/Europe/Ukraine.png
+    - assets/Europe/United-Kingdom.png
+    - assets/Europe/Vatican-City.png
+
+    - assets/nAmerica/Antigua.png
+    - assets/nAmerica/Bahamas.png
+    - assets/nAmerica/Barbados.png
+    - assets/nAmerica/Belize.png
+    - assets/nAmerica/Canada.png
+    - assets/nAmerica/Costa-Rica.png
+    - assets/nAmerica/Cuba.png
+    - assets/nAmerica/Dominica.png
+    - assets/nAmerica/Dominican-Republic.png
+    - assets/nAmerica/El-Salvador.png
+    - assets/nAmerica/Grenada.png
+    - assets/nAmerica/Guatemala.png
+    - assets/nAmerica/Haiti.png
+    - assets/nAmerica/Honduras.png
+    - assets/nAmerica/Jamaica.png
+    - assets/nAmerica/Mexico.png
+    - assets/nAmerica/Nicaragua.png
+    - assets/nAmerica/Panama.png
+    - assets/nAmerica/St-Kitts-Nevis.png
+    - assets/nAmerica/St-Lucia.png
+    - assets/nAmerica/St-Vincent-the-Grenadines.png
+    - assets/nAmerica/Trinidad-and-Tobago.png
+    - assets/nAmerica/United-States-of-America.png
+
+    - assets/Oceania/Australia.png
+    - assets/Oceania/Fiji.png
+    - assets/Oceania/Kiribati.png
+    - assets/Oceania/Marshall-Islands.png
+    - assets/Oceania/Micronesia.png
+    - assets/Oceania/Nauru.png
+    - assets/Oceania/New-Zealand.png
+    - assets/Oceania/Palau.png
+    - assets/Oceania/Papua-New-Guinea.png
+    - assets/Oceania/Samoa.png
+    - assets/Oceania/Solomon-Islands.png
+    - assets/Oceania/Tonga.png
+    - assets/Oceania/Tuvalu.png
+    - assets/Oceania/Vanuatu.png
+
+    - assets/sAmerica/Argentina.png
+    - assets/sAmerica/Bolivia.png
+    - assets/sAmerica/Brazil.png
+    - assets/sAmerica/Chile.png
+    - assets/sAmerica/Colombia.png
+    - assets/sAmerica/Ecuador.png
+    - assets/sAmerica/Guyana.png
+    - assets/sAmerica/Paraguay.png
+    - assets/sAmerica/Peru.png
+    - assets/sAmerica/Suriname.png
+    - assets/sAmerica/Uruguay.png
+    - assets/sAmerica/Venezuela.png
+
+    - assets/Oversea/Christmas-Island.png
+    - assets/Oversea/Cocos-Islands.png
+    - assets/Oversea/Norfolk-Island.png
+    - assets/Oversea/Easter-Island.png
+    - assets/Oversea/Juan-Fernandez-Islands.png
+    - assets/Oversea/Faroe-Islands.png
+    - assets/Oversea/Greenland.png
+    - assets/Oversea/Aland.png
+    - assets/Oversea/French-Polynesia.png
+    - assets/Oversea/New-Caledonia.png
+    - assets/Oversea/Saint Barthélemy.png
+    - assets/Oversea/Saint-Martin.png
+    - assets/Oversea/Saint-Pierre-and-Miquelon.png
+    - assets/Oversea/Wallis-and-Futuna.png
+    - assets/Oversea/French-Guiana.png
+    - assets/Oversea/Guadeloupe.png
+    - assets/Oversea/Martinique.png
+    - assets/Oversea/Mayotte.png
+    - assets/Oversea/Reunion.png
+    - assets/Oversea/Aruba.png
+    - assets/Oversea/Bonaire.png
+    - assets/Oversea/Curaçao.png
+    - assets/Oversea/Saba.png
+    - assets/Oversea/Sint-Eustatius.png
+    - assets/Oversea/Sint-Maarten.png
+    - assets/Oversea/Cook-Islands.png
+    - assets/Oversea/Niue.png
+    - assets/Oversea/Tokelau.png
+    - assets/Oversea/Chatham-Islands.png
+    - assets/Oversea/Azores.png
+    - assets/Oversea/Madeira.png
+    - assets/Oversea/Ceuta.png
+    - assets/Oversea/Melilla.png
+    - assets/Oversea/Canary-Islands.png
+    - assets/Oversea/Anguilla.png
+    - assets/Oversea/Bermuda.png
+    - assets/Oversea/British-Virgin-Islands.png
+    - assets/Oversea/Cayman-Islands.png
+    - assets/Oversea/Falkland-Islands.png
+    - assets/Oversea/Gibraltar.png
+    - assets/Oversea/Montserrat.png
+    - assets/Oversea/Pitcairn-Islands.png
+    - assets/Oversea/South-Georgia-and-South-Sandwich-Islands.png
+    - assets/Oversea/Turks-and-Caicos-Islands.png
+    - assets/Oversea/Saint-Helena.png
+    - assets/Oversea/Ascension-Island.png
+    - assets/Oversea/Tristan-da-Cunha.png
+    - assets/Oversea/Guernsey.png
+    - assets/Oversea/Isle-of-Man.png
+    - assets/Oversea/Jersey.png
+    - assets/Oversea/American-Samoa.png
+    - assets/Oversea/Guam.png
+    - assets/Oversea/Northern-Mariana-Islands.png
+    - assets/Oversea/Puerto-Rico.png
+    - assets/Oversea/US-Virgin-Islands.png
+    - assets/Oversea/Samoa.png
+    - assets/Oversea/Galapagos-Islands.png
+    - assets/Oversea/Socotra.png
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Vollkorn
+      fonts:
+        - asset: fonts/static/Vollkorn-Regular.ttf
+        - asset: fonts/static/Vollkorn-Bold.ttf
+          weight: 700
+        - asset: fonts/static/Vollkorn-Italic.ttf
+          style: italic
+        - asset: fonts/static/Vollkorn-BoldItalic.ttf
+          weight: 700
+          style: italic
+    - family: Jolly Lodger
+      fonts:
+        - asset: fonts/JollyLodger/JollyLodger-Regular.ttf
+    - family: GochiHand
+      fonts:
+        - asset: fonts/GochiHand/GochiHand-Regular.ttf
+    - family: OleoScript
+      fonts:
+        - asset: fonts/OleoScript/OleoScript-Regular.ttf
+        - asset: fonts/OleoScript/OleoScript-Bold.ttf
+          weight: 700
+    - family: RibeyeMarrow
+      fonts:
+        - asset: fonts/RibeyeMarrow/RibeyeMarrow-Regular.ttf
+    - family: RubikWetPaint
+      fonts:
+        - asset: fonts/RubikWetPaint/RubikWetPaint-Regular.ttf
+    - family: VastShadow
+      fonts:
+        - asset: fonts/VastShadow/VastShadow-Regular.ttf
+    - family: WalterTurncoat
+      fonts:
+        - asset: fonts/WalterTurncoat/WalterTurncoat-Regular.ttf
+          
+  
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
